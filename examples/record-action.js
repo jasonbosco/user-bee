@@ -1,6 +1,6 @@
-var userbee = require('../')();
+var userBee = require('../')();
 
-userbee.recordAction(123, [
+userBee.recordAction(123, [
     {"Signed Up":{"Plan":"Premium"}}
 ], function (err) {
     if (err) console.error(err);

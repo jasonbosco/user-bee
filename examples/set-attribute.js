@@ -1,7 +1,7 @@
-var userbee = require('../')();
+var userBee = require('../')();
 
-userbee.setAttribute(123, [
-    {"Signed Up":true}
+userBee.setAttribute(123, [
+    {"Signed Up":false}
 ], function (err) {
     if (err) console.error(err);
     else console.log("Done");

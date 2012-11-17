@@ -1,1 +1,1 @@
-module.exports = require('./lib/userbee');
+module.exports = require('./lib/user-bee');
