@@ -1,7 +1,7 @@
 var userBee = require('../')();
 
-userBee.recordAction(123, [
-    {"Signed Up":{"Plan":"Premium"}}
+userBee.setAttributes(123, [
+    {"Signed Up":false}
 ], function (err) {
     if (err) console.error(err);
     else console.log("Done");
