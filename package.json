@@ -1,18 +1,19 @@
 {
-    "private"     :true,
-    "name"        :"user-bee",
-    "version"     :"0.0.1",
-    "description" :"Framework to generate emails based on user behavior",
-    "author"      :"Jason Bosco Jesuraj <mail@jasonbos.co> (http://jasonbos.co)",
-    "keywords"    :["behavioral", "user", "email"],
+    "private":true,
+    "name":"user-bee",
+    "version":"0.0.1",
+    "description":"Framework to generate emails based on user behavior",
+    "author":"Jason Bosco Jesuraj <jason@jbos.co> (http://jasonbos.co)",
+    "keywords":["behavioral", "user", "email"],
     "dependencies":{
-        "kue"    :">=0.5.0",
-        "async"  :">=0.1.22",
+        "kue":">=0.5.0",
+        "async":">=0.1.22",
         "mongodb":">=1.2.9",
-        "redis"  :">=0.8.2",
-        "email-templates": ">=0.0.7",
-        "later": ">=0.0.11"
+        "redis":">=0.8.2",
+        "email-templates":">=0.0.7",
+        "later":">=0.0.11",
+        "nodemailer":">=0.3.37"
     },
-    "main"        :"lib/user-bee.js",
-    "engine"      :"node 0.8.8"
+    "main":"lib/user-bee.js",
+    "engine":"node 0.8.8"
 }
