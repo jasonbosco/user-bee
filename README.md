@@ -1,7 +1,9 @@
 user-bee
 ========
 
-UserBee is a framework to trigger and send automated emails based on user behavior.
+UserBee is a framework to trigger and send automated emails asynchronously based on user behavior.
+
+A common use case is to setup [drip email campaigns](http://en.wikipedia.org/wiki/Drip_marketing).
 
 
 ## Installation
@@ -27,7 +29,7 @@ or
 
 UserBee consists of two processes:
 
-The **Scheduler** is responsible for executing the triggers at the specified frequency
+The **Scheduler** is responsible for executing triggers at the specified frequency.
 
     // Start the scheduler (as a seperate process)
     var userBee = require('user-bee')();
@@ -49,15 +51,15 @@ UserBee uses [kue](https://github.com/learnboost/kue) for a queue. To start the 
 ## Workflow
 
 
-- Start the scheduler and worker processes as described above
+- Start the scheduler and worker processes as described above.
 - Add user attributes with `userBee.setAttributes()`
-    - UserBee enqueues an async job with the attributes
-    - Worker process picks up the job and saves the user attributes to DB
-- Add triggers that query the DB for users matching a condition
+    - UserBee enqueues an async job with the specified attributes.
+    - Worker process picks up the job and saves the user attributes to DB.
+- Add triggers that query the DB for users matching a condition.
     - A trigger consists of a query, a frequency and options for the email template to be used when the trigger is processesed.
-    - A trigger is processed at specific times using the given frequency pattern
-    - When the trigger is processed, it querys the DB using the given query.
-    - It will then enqueue a job that will send an email using the specified template and subject name.
+    - A trigger is processed at specific times using the given frequency pattern.
+    - When the trigger is processed, it queries the DB using the given query.
+    - It will then enqueue a job that will send an email using the specified email template and email subject.
     - All user attributes are available for use in the email template.
     - Worker process picks up the email job and sends out the actual email.
 
@@ -136,7 +138,7 @@ UserBee uses [kue](https://github.com/learnboost/kue) for a queue. To start the 
 ## Todo
 
 
-- See issues : [https://github.com/jasonbosco/user-bee/issues]
+- See issues : https://github.com/jasonbosco/user-bee/issues
 
 
 ## License
