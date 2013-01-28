@@ -1,4 +1,4 @@
-var userBee = require('../lib/user-bee.js')();
+var userBee = require('../')();
 
 userBee.setAttributes(110, {
     "Signed Up":true,

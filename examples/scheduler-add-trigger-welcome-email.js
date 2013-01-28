@@ -1,4 +1,4 @@
-var userBee = require('../lib/user-bee')();
+var userBee = require('../')();
 
 //Triggers a welcome email when user signs up
 userBee.scheduler.addTrigger({

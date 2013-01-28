@@ -1,4 +1,4 @@
-var userBee = require('../lib/user-bee')();
+var userBee = require('../')();
 
 // Emails all users once immediately (once because, no trigger is triggered twice for a user)
 userBee.scheduler.addTrigger({

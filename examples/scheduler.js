@@ -1,3 +1,3 @@
-var userBee = require('../lib/user-bee')();
+var userBee = require('../')();
 
 userBee.scheduler.start();
