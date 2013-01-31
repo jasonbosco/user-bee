@@ -60,7 +60,7 @@ UserBee uses [kue](https://github.com/learnboost/kue) for a queue. To start the 
     - A trigger is processed at specific times using the given frequency pattern.
     - When the trigger is processed, it queries the DB using the given query.
     - It will then enqueue a job that will send an email using the specified email template and email subject.
-    - All user attributes are available for use in the email template.
+    - All user attributes are available for use in the email template as user.* .
     - Worker process picks up the email job and sends out the actual email.
 
 
