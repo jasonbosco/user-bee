@@ -1,6 +1,6 @@
 {
     "name":"user-bee",
-    "version":"0.0.2",
+    "version":"0.0.3",
     "description":"Framework to trigger emails based on user behavior",
     "author":"Jason Bosco <jason@jbos.co> (http://jasonbos.co)",
     "keywords":[
